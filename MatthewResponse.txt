@@ -1,0 +1,1 @@
+SELECT CarMaker, CarModel, SUM(SalePriceInDollar) AS 'TotalSalePrice' FROM CarSales WHERE DATEDIFF(CURRENT_TIMESTAMP,SaleDate) BETWEEN 0 AND 30 GROUP BY CarMaker,CarModel;
